@@ -3,8 +3,6 @@
 
 # _Ekaterina Sokolskaya_ #
 
-* * *
-
 _Junior Frontend Developer_
 
 ***
