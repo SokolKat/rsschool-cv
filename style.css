@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(112, 71, 17);
+}
+
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/open-sans-v28-latin_cyrillic-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v28-latin_cyrillic-600.woff') format('woff');
+    /* Modern Browsers */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2{
+    color: #829985;
+}
+
+html {
+    font-family: 'open sans', sans-serif;
+    scroll-behavior: smooth;
+    height: 100%
+}
+
+.main-top {
+    display: flex; 
+    justify-content: center;  
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.nav-container{
+    background-color: #809680;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+    color: antiquewhite;
+}
+
+.section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #4d2323;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 6px solid Tan;
+}
+
+.avatar {
+	display: inline-block;
+}
+
+.my-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.section-description,
+.section-name {
+    display: flex;
+}
+
+.section-description{
+    border-top: 2px solid #809680;
+}
+
+.center {
+    display: flex;
+}
+
+.main-left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.languages,
+.contacts,
+.skills{
+    border-top: 1px solid rgb(112, 71, 17);
+}
+
+.main-right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #829985;
+}
+
+.footer-left,
+.footer-right{
+    display: flex;
+    margin: 10px;
+    color: antiquewhite;
+}
+
+.git{
+    margin-left: 40px;
+}
+
+.logo{
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
