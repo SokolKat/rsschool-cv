@@ -1,3 +1,3 @@
 # rsschool-cv
-https://Sokol-Kat.github.io/rsschool-cv/cv
-https://Sokol-Kat.github.io/rsschool-cv/
+https://SokolKat.github.io/rsschool-cv/cv
+https://SokolKat.github.io/rsschool-cv/
