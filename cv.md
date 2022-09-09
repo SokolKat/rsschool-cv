@@ -26,7 +26,7 @@ _I decided to change my life... Work takes about half of the time, so I'm changi
 
 - _2002-2013 School 2013-2017 Russian State Social University, Bachelor of Economics_
 - _2022 Vladilen Minin courses in HTML5 & CSS3_
-- _2022 (in progress) course of Tomsk State University "1C-developer"_
+- _2022 course of Tomsk State University "1C-developer"_
 - _2022 (in progress) Rolling Scopes School course "JavaScript/Front-end.Stage 0"_
 
 ## Skills: ##
