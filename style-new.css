@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+/*Обнуление*/
+
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    color: rgb(112, 71, 17);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,body{
+	height: 100%;
+	line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Tiro Devanagari Sanskrit', serif;
+	font-size: 20px;
+}
+
+/* h1,h2,h3,h4,h5,h6 {
+	font-size:inherit;
+	font-weight: inherit;
+} */
+
+h2{
+    color: #829985;
+}
+
+.code {
+	padding: 5px;
+	color: #f1dfbd;
+	font-weight: lighter;
+	letter-spacing: -1.5px;
+	background-color: rgba(230, 230, 250, 0.405);
+	padding-bottom: 10%;
+}
+
+code {
+	color: rgb(121, 121, 255);
+}
+/*--------------------*/
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+/*--------------------*/
+
+.main {
+	flex: 1 1 auto;
+}
+
+/*--------------------*/
+[class*="__container"]{
+	max-width: 1180px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+/*PC*/
+
+@media (max-width: 1087px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+
+/*TABLET*/
+
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+
+/*MOBILE*/
+
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		/* max-width: 750px; */
+	}
+}
+
+/*MOBILE SMALL*/
+
+@media (max-width: 479.98px) {
+}
+
+/*--------------------*/
+
+.header {
+	width: 100%;
+	background-color: #829985;
+}
+
+/* .header__container {
+	display: flex;
+	min-height: 114px;
+	align-items: center;
+} */
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__link {
+	padding: 0px 40px 0px 0px;
+	line-height: 50px;
+}
+
+.nav__link a{
+	color: #4d3e2d;
+	transition: all 0.3s ease;
+}
+
+.nav__link a:hover {
+	color: #f1dfbd;
+	text-shadow: 1px 1px 5px #f1dfbd;
+}
+
+/*--------------------*/
+.main {
+	background-color: #fafbfd;
+	margin-bottom: 15px;
+}
+
+.row__container {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.row__avatar {
+	position: relative;
+	flex: 0 0 auto;
+	z-index: 5;
+}
+
+.row__avatar img {
+	position: relative;
+	width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px;
+}
+  
+.row__avatar::before,
+.row__avatar::after {
+	content: '';
+	position: absolute;
+	width: 205px;
+	height: 205px;
+	border-radius: 50%;
+	z-index: -1;
+}
+  
+.row__avatar::before {
+	top: -3px;
+	left: 2px;
+	transform: translate(6px, 10px);
+	background-color: #829985;
+}
+  
+.row__avatar::after {
+	top: 28px;
+	left: 25px;
+	transform: translate(-6px, -10px);
+	background-color: #4d3e2d;
+}
+
+.row__social {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100%;
+	flex: 0 0 20%;
+}
+
+.git {
+	width: 50px;
+	height: 50px;
+}
+
+.git, .codewars {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;	
+	animation: social 2s ease-in-out infinite alternate;
+}
+
+.git svg,
+.codewars svg {
+	box-sizing: content-box;
+	fill: rgba(66, 43, 88, 0.803);
+	border-radius: 50%;
+	border: 10px solid lavender;
+	/* transform: translateX(-200%) translateY(-50%); */
+}
+
+.git svg:hover {
+	border: 20px solid lavender;
+}
+
+.codewars {
+	background-image: url(./codewars.svg);
+	background-size: cover;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+}
+
+.img-container {
+	background-color: #b1361e36;
+	outline: 1px solid #b1361e36;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.img-container:hover {
+	outline: 10px solid #b1361e36;
+	border-radius: 50%;
+}
+
+
+@keyframes social {
+	0% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+
+/* .row__social .git a {
+    transition: border 0.3s ease-in-out;
+	border-radius: 50%;
+    border-color: var(--github-bg);
+    transform: translateX(50%) translateY(-50%);
+  } */
+
+.row__profile {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.profile__name,
+.profile__description {
+	padding: 15px;
+}
+
+.profile__description {
+	font-size: 18px;
+	border-top: 2px solid #809680;
+}
+
+/*--------------------*/
+
+.column__items {
+	position: relative;
+	display: flex;
+	flex: 1 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 1.5em;
+	line-height: 1.2em;
+}
+
+.column__item {
+	flex: 0 1 48%;
+	min-width: 280px;
+}
+
+.item__history_center {
+	text-align: center;
+}
+
+.item__history_center::before, .item__history_center::after {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: #829985;
+}
+
+.item__history_center::before {
+    content: "<";
+    margin-left: -12px;
+}
+
+.item__history_center::after {
+    content: "/>";
+}
+
+.title {
+	font-weight: bold;
+}
+
+.text {
+	margin-top: 10px;
+}
+
+/*--------------------*/
+
+.footer {
+	background-color: #829985;
+	font-size: 14px;
+}
+
+.footer__container {
+	height: 55px;
+}
+
+.footer__items {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+	height: 100%;
+}
+
+.item__years p{
+	color: #4d3e2d;
+}
+
+.item__social {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: inherit;
+	gap: 20px;
+}
+
+.git svg {
+	width: 25px;
+	transition: all 0.3s ease;
+}
+
+.rs {
+	width: 70px;
+}
+
+.git_footer img {
+	width: 30px;
+	height: 30px;
+}
+
+@media (max-width: 770px) {
+	.nav__list {
+		flex-wrap: wrap;
+	}
+	.nav__link {
+		padding: 0px 10px 0px 0px;
+		line-height: 30px;
+	}
+	.row__avatar {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 650px) {
+	.column__item {
+		flex: 0 1 100%;
+	}
+	.row__container {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
